@@ -1,0 +1,7 @@
+Tasklist to be completed before next week:
+1. Make list of Google Search Queries for player trades over the last 10 years.
+  - Figure out which players were in free agency over the last 10 years and whether they were traded or not.
+  - Shorten the list to relevant players/players with enough news/articles/tweets.
+  - Then make list of appropriate google search queries.	
+2. Make script for web-scrapping using bs4.
+3. Create structured dataset. 
