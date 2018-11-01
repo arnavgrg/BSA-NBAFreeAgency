@@ -33,3 +33,20 @@ tknzr = TweetTokenizer()
 
 #Tokenize Text
 print(tknzr.tokenize(text))
+
+##Extracting wikipedia links from google 
+'''
+links1 = []
+#Tokenize into 'get' query formats 
+query = 'Lebron James'
+query = urllib.parse.quote_plus(query)
+
+#Get request to a link; return status code 200 if successful. r.text has all the text saved
+r = requests.get('https://www.google.com/search?q=site:wikipedia.com+{}&gbv=1&sei=YwHNVpHLOYiWmQHk3K24Cw'.format(query))
+
+#Convert it to a soup object, but parsing it usin html so it understands the text being parsed. 
+soup = BeautifulSoup(r.text, "html.parser")
+
+for item in soup.find_all('h3', attrs={'class' : 'r'}):
+    links1.append(item.a['href'][7:])
+'''
