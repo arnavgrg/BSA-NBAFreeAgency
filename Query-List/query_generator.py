@@ -1,4 +1,5 @@
 query_list = []
+questions = []
 
 def query_generator(player_info):
     '''
@@ -11,11 +12,13 @@ def query_generator(player_info):
     '''
     global query_list
     num_questions = 10
+
     for i in range(num_questions):
-        pass
-    f = open("query_list.csv","w+")
-    #f.write("Blank")
-    f.close()
+        
+        #Write to query_list
+        f = open("query_list.csv","w+")
+        f.write()
+        f.close()
     return 
 
 def main():
